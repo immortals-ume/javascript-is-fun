@@ -68,13 +68,21 @@ for (let i = 0; i < 10; i++) {
   console.log("for loop " + i);
 }
 
-//infinite loop
-let iio = 10;
-do {
- iio = iio + 9;
- console.log(iio);
-} while (iio > 10);
+//infinite loop are bad!
+// let iio = 10;
+// do {
+//   iio = iio + 9;
+//   console.log(iio);
+// } while (iio > 10);
 
+//DO While Loop
+let i1 = 0;
+do {
+  i1 += 1;
+  console.log(i1);
+} while (i1 < 5);
+
+//While Loop
 let n = 0;
 let x2 = 0;
 while (n < 3) {
@@ -83,12 +91,95 @@ while (n < 3) {
 }
 
 //Infinite loops are bad!
-while (true) {
-  console.log('Hello, world!');
+// while (true) {
+//   console.log("Hello, world!");
+// }
+
+//labeled stmt's
+
+let theMark = false;
+markLoop: while (theMark === true) {
+  console.log(":");
 }
 
+/* * Break stmt
+ *  When you use break without a label, it terminates the innermost enclosing while, do-while, for,
+ *  or switch immediately and transfers control to the following statement.
+ *  When you use break with a label, it terminates the specified labeled statement.
+ * Syntax :
+ *  break;
+ *  break [label];
+ */
+
+for (let i = 0; i < a.length; i++) {
+  if (a[i] === theValue) {
+    break;
+  }
+}
+
+let x1 = 0;
+let z = 0;
+labelCancelLoops: while (true) {
+  console.log("Outer loops: " + x1);
+  x1 += 1;
+  z = 1;
+  while (true) {
+    console.log("Inner loops: " + z);
+    z += 1;
+    if (z === 10 && x1 === 10) {
+      break labelCancelLoops;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+
+/* * Continue stmt
+ *  When you use continue without a label, it terminates the current iteration of the innermost enclosing while,
+ *  do-while, or for statement and continues execution of the loop with the next iteration. In contrast to the break statement, continue does not terminate the execution of the loop entirely. In a while loop, it jumps back to the condition. In a for loop, it jumps to the increment-expression.
+ *  When you use continue with a label, it applies to the looping statement identified with that label.
+ * Syntax :
+ *  continue;
+ *  continue [label];
+ */
+
+let i3 = 0;
+let n3 = 0;
+while (i3 < 5) {
+  i3++;
+  if (i3 === 3) {
+    continue;
+  }
+  n3 += i3;
+  console.log(n3);
+}
+//1,3,7,12
+
+let i2 = 0;
+let n2 = 0;
+while (i2 < 5) {
+  i2++;
+  if (i2 === 3) {
+    continue;
+  }
+  n2 += i2;
+  console.log(n2);
+}
+// 1,3,6,10,15
+
 let i = 0;
-do {
-  i += 1;
+let j = 10;
+checkiandj: while (i < 4) {
   console.log(i);
-} while (i < 5);
+  i += 1;
+  checkj: while (j > 4) {
+    console.log(j);
+    j -= 1;
+    if (j % 2 === 0) {
+      continue checkj;
+    }
+    console.log(j + " is odd.");
+  }
+  console.log("i = " + i);
+  console.log("j = " + j);
+}
