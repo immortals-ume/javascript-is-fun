@@ -183,3 +183,37 @@ checkiandj: while (i < 4) {
   console.log("i = " + i);
   console.log("j = " + j);
 }
+
+/* * For-in loop
+ * statement iterates a specified variable over all the enumerable properties of an object
+ */
+
+let car = {
+  name: "Mercedes",
+  type: "super car",
+};
+function dump_props(obj, obj_name) {
+  let result = "";
+  for (let i in obj) {
+    result += obj_name + "." + i + " = " + obj[i] + "<br>";
+  }
+  result += "<hr>";
+  return result;
+}
+
+console.log(dump_props(car, car.name));
+
+/* *For-of loop
+ *  creates a loop Iterating over iterable objects (including Array, Map, Set, arguments object and so on), invoking a custom iteration
+ *  hook with statements to be executed for the value of each distinct property.
+ */
+const arr = [3, 5, 7];
+arr.foo = "hello";
+
+for (let i in arr) {
+  console.log(i); 
+}
+
+for (let i of arr) {
+  console.log(i);
+}
