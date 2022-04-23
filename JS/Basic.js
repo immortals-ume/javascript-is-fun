@@ -228,5 +228,30 @@ y = 42 + " is the answer"; // "42 is the answer"
 let coffees = ["French Roast", "Colombian", "Kona"];
 console.log(coffees);
 
-let fish = ['Lion', , 'Angel'];
-console.log(fish)
+let fish = ["Lion", , "Angel"];
+console.log(fish);
+
+/**
+ * Expression and Operators in JS
+ * Assignment operators
+ * Comparison operators
+ * Arithmetic operators
+ * Bitwise operators
+ * Logical operators
+ * String operators
+ * Conditional (ternary) operator
+ * Comma operator
+ * Unary operators
+ * Relational operators
+ *
+ *
+ * binary and unary operators, and one special ternary operator, the conditional operator.
+ *? Binary Operator SYNTAX - operand1 operator operand2
+ *? Uniary Opertor Syntax -  operator operand or  operand operator
+ */
+let y1 = "Hello World!";
+let x = 34; //assignment
+console.log((x += 30)); //Addition Assignment
+console.log((y1 += "World now")); //String addition Assignment
+console.log((y1 -= 30)); // Subtraction Assignment
+console.log((y1 -= "World!"));
