@@ -248,6 +248,24 @@ console.log(fish);
  * binary and unary operators, and one special ternary operator, the conditional operator.
  *? Binary Operator SYNTAX - operand1 operator operand2
  *? Uniary Opertor Syntax -  operator operand or  operand operator
+ *
+ * Name	Shorthand operator	Meaning
+   Assignment	x = f()	x = f()
+   Addition assignment	x += f()	x = x + f()
+   Subtraction assignment	x -= f()	x = x - f()
+   Multiplication assignment	x *= f()	x = x * f()
+   Division assignment	x /= f()	x = x / f()
+   Remainder assignment	x %= f()	x = x % f()
+   Exponentiation assignment	x **= f()	x = x ** f()
+   Left shift assignment	x <<= f()	x = x << f()
+   Right shift assignment	x >>= f()	x = x >> f()
+   Unsigned right shift assignment	x >>>= f()	x = x >>> f()
+   Bitwise AND assignment	x &= f()	x = x & f()
+   Bitwise XOR assignment	x ^= f()	x = x ^ f()
+   Bitwise OR assignment	x |= f()	x = x | f()
+   Logical AND assignment	x &&= f()	x && (x = f())
+   Logical OR assignment	x ||= f()	x || (x = f())
+   Logical nullish assignment	x ??= f()	x ?? (x = f())
  */
 let y1 = "Hello World!";
 let x = 34; //assignment
@@ -255,3 +273,4 @@ console.log((x += 30)); //Addition Assignment
 console.log((y1 += "World now")); //String addition Assignment
 console.log((y1 -= 30)); // Subtraction Assignment
 console.log((y1 -= "World!"));
+
