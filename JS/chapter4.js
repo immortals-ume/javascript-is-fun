@@ -1,4 +1,8 @@
-/* *The latest ECMAScript standard defines eight data types:
+/* *
+ * Chapter 4 : Expression , operators , numbers , Dates and Text Formating in ECMAScript(ES)
+ */
+
+/**The latest ECMAScript standard defines eight data types:
 
  * Seven data types that are primitives:
  * Boolean. true and false.

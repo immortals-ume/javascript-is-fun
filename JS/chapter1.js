@@ -1,3 +1,8 @@
+/* *
+ * Chapter 1 :  Basics of ECMAScript(ES)
+ */
+
+
 //?variables
 var str = ""; //Declares a variable, optionally initializing it to a value.
 
